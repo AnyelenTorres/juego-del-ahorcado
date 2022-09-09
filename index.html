@@ -13,18 +13,22 @@
 
     </head>
     <body>
-    
-    <main>
-        <h1 class="tituloh1">¡Bienvenidos al juego del ahorcado!</h1>
-        <nav class="botones">
-            <button class="btnIniciar" onclick="btnIniciar()">Iniciar el juego</button>
-            <button class="btnSalir" onclick="btnSalir()">Salir</button>
-            
-        </nav>
+        <img src="logoAlura.png" class="logo"alt="logo de alura">
+        <div id="desaparece" class="boton-home">
+            <a href="aforca">
+                <input class="btn-iniciar" type="submit" value="iniciar juego" onclick="iniciarJuego()">
+            </a>
+        </div>
+  
+        <div id="aparece-juego-ahorcado" class="canvas">
+            <canvas id="forca" width="1200"height="860"></canvas>
 
-    </main>
+        </div>
+        <div class="subrayado"></div>
+        
 
-
+        <script src="script.js"></script>
+        <script src="canvas.js"></script>   
 
     </body>  
 
