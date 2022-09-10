@@ -15,7 +15,7 @@ function dibujarCanvas(){
 }
 
 function dibujarLinea(){
-    tablero.lineWidth=8;
+    tablero.lineWidth = 8;
     tablero.lineCap = "round";
     tablero.line.Join = "round";
     tablero.fillStyle = "#F3F5F6";
@@ -23,10 +23,10 @@ function dibujarLinea(){
 
     let anchura= 600/palabraSecreta.length;
     
-    for (let i = 0; i < palabraSecreta.length, i++);
-    tablero.moveTo(500 +(anchura + i),640);
-    tablero.lineTo(500 + (anchura * i ),640);
-
+    for (let i = 0 ; i < palabraSecreta.length; i++){
+    tablero.moveTo(500 + (anchura * i),640);
+    tablero.lineTo(500 + (anchura * i),640);
+    }   
 }
 tablero.stroke();
-tablero.closePath;
+tablero.closePath();
