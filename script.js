@@ -1,17 +1,20 @@
 let palabras = ["colores","maestra","recreo","campana"];
-let tablero = document.getElementById("").getContext("2d");
+let tablero = document.getElementById("canvas").getContext("2d");
 let palabraSecreta = "";
 
 
 function iniciarJuego(){
-    document.getElementById(iniciarJuego).style.display = none;
-
+    document.getElementById("iniciar-juego").style.display = "none";
+    document.getElementById("salir").style.display = "none";
+    document.getElementById("tituloh1").style.display ="none";
+    escogerPalabraSecreta();
 }
+
+
 function escogerPalabraSecreta(){
-    let palabras = palabras[i];
-    let palabra = palabras[Math.floor(Math.random()*palabras.length)];
+    
+    let palabra = palabras[Math.floor(Math.random()* palabras.length)];
     palabraSecreta = palabra;
-
-
+    console.log(palabraSecreta);
 
 }

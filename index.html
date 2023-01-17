@@ -2,39 +2,42 @@
 
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width,inicial-scale-1.0">
-         <meta http-equiv="x-UA-COMPATIBLE" content="ie-edge">
+        <meta charset="UTF-8"/>
+         |   <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
          <title>Juego del ahorcado</title>
          <link rel="stylesheet" href="style.css">
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
 
-    </head>
+
+
     <header>
+       
         <img src="logoAlura.png" class="logo"alt="logo de alura">
-        <h1 class="tituloh1">JUEGO DEL AHORCADO</h1>
+       
     </header>
     <body>
-        
-        <div id="desaparece" class="boton-home">
-         
-                <input class="btn-iniciar" type="submit" value="iniciar juego" onclick="iniciarJuego()">
-                <input class="btn-salir" type="submit" value="Salir" onclick="salir()">
-            </a>
-        </div>
-  
+        <h1 class="tituloh1" id="tituloh1">JUEGO DEL AHORCADO</h1>
+        <div id="desaparece" class="botones"></div>
+
         <div id="aparece-juego-ahorcado" class="canvas">
-            <canvas id="forca" width="1200"height="860"></canvas>
-
+        <canvas id="la-horca" width="1200" height="860"></canvas>
         </div>
-        <div class="subrayado"></div>
-        
 
-        <script src="script.js"></script>
+        <div>
+            <input class="btn-iniciar" type="submit" value="iniciar juego"id="iniciar-juego" onclick ="iniciarJuego()">
+            <input class="btn-agregar-palabra"type="submit" value="Agregar palabra" id="btn-agregar-palabra" onclick ="agregarPalabra()">
+        </div>
+
+        <div class="subrayado"></div>
+
+        <script src="horca.js"></script>
         <script src="canvas.js"></script>   
 
     </body>  
-
+    <footer class="footer">
+        <p id="creado">Creado por Anyelen Torres</p>
+    </footer>
 </html>    

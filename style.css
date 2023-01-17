@@ -1,26 +1,63 @@
-
+.logo{
+    background: #fb8a19;
+    padding: 10px 1100px 10px 0;
+}
 .tituloh1{
+    
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bungee Spice', cursive; 
+    color:#852121;
+    margin:100px 0 20px 0;
+  
 
 }
+
 .body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bungee Spice', cursive;
+    justify-content: center;
+    background-color:#f28110;
 
 }
 .btn-iniciar{
-    margin: 10px 0 0 400px;
+    margin: 10px 0 0 450px;
     border-radius: 10px;
-    padding: 10px;
-    background-color: crimson;
-   
+    padding: 10px;  
+    background-color: #f28110;
+    color:white;
 }
-
-
-.btn-salir{
-    margin:10px 0 0 30px;
+.btn-iniciar:hover{
+   padding: 20px;
+   font-size: 20px;
+}
+.btn-agregar-palabra{
+    margin: 10px 0 0 450px;
     border-radius: 10px;
-    padding: 10px;
-    background-color: crimson;
-     
+    padding: 10px;  
+    background-color: rgb(242, 129, 16);
+    color:white;
+
+}
+.btn-agregar-palabra:hover{
+    padding: 20px;
+   font-size: 20px;
+}
+.footer{
+   width:1100px  
+}
+#creado{
+    background-color: #f28110;
+   text-align: center;
+    color:white;
+    
+}
+.btn-agregar-palabra{
+    background: #f28110;
+    text-align: center;
+    
+}
+#gameOver{
+    background-color: #f28110;
+    text-align: center;
+    color:rgb(24, 9, 9);
+    font-weight: solid bold 100;
 }
